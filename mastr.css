@@ -1,0 +1,147 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: var(--Violet);
+  color: white;
+}
+.up {
+  display: grid;
+  justify-content: end;
+  height: 97vh;
+  align-items: center;
+}
+.all {
+  width: 460px;
+  position: relative;
+  top: 100px;
+  right: 250px;
+}
+title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: block;
+  font-size: 36px;
+}
+p {
+  line-height: 25px;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: white;
+  width: 160px;
+  height: 50px;
+  border-radius: 40px;
+  color: var(--Violet);
+  font-weight: 600;
+  box-shadow: 0px 0px 20px 0px #0000007a;
+  transition-duration: 0.3s;
+}
+button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+.icons {
+  justify-self: flex-end;
+  display: grid;
+  width: 200px;
+  grid-template-columns: repeat(3, auto);
+  gap: 25px;
+  font-size: 17px;
+  justify-content: flex-end;
+  position: relative;
+  top: 100px;
+  right: 230px;
+}
+span {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+span:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+img.logo {
+  position: absolute;
+  left: 70px;
+  top: 60px;
+  width: 220px;
+}
+img.illustration {
+  position: absolute;
+  top: 190px;
+  left: 60px;
+}
+@media screen and (max-width: 1260px) {
+  .all {
+    right: 50px;
+  }
+  img.illustration {
+    left: 10px;
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1261px) and (max-width: 1350px) {
+  .all {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  img.logo {
+    left: 65px;
+    top: 70px;
+    width: 400px;
+  }
+  img.illustration {
+    top: 300px;
+    left: 90px;
+    width: 800px;
+  }
+  .all {
+    width: 780px;
+    position: relative;
+    top: 650px;
+    right: 100px;
+    text-align: center;
+  }
+  title {
+    font-size: 70px;
+  }
+  p {
+    line-height: 60px;
+    font-size: 41px;
+  }
+  button {
+    width: 500px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+  .icons {
+    right: 280px;
+    top: 200px;
+    gap: 50px;
+    font-size: 50px;
+  }
+  span {
+    width: 100px;
+    height: 100px;
+  }
+}
